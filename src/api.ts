@@ -17,7 +17,7 @@ const getAllFilterItems = async (activeSort:IActiveSort, activeType:number, page
         }
         url.searchParams.append("sortBy", activeSort.sort);
         url.searchParams.append("order", activeSort.param);
-        const response = await fetch(url + `&page=${page}&limit=6`);
+        const response = await fetch(url + `&page=${page}&limit=18`);
         return await response.json();
 };
 const getAllItems = async () => {

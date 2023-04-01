@@ -30,8 +30,8 @@ export const Pagination = (props: Props) => {
             breakLabel="..."
             nextLabel=">"
             onPageChange={(e) => onChangePage(e.selected + 1)}
-            pageRangeDisplayed={6}
-            pageCount={4}
+            pageRangeDisplayed={1}
+            pageCount={2}
             previousLabel="<"
             renderOnZeroPageCount={null}
         />
