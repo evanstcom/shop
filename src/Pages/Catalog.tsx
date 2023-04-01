@@ -8,7 +8,6 @@ import { getAllFilterItems } from "../api";
 import { CatalogList } from "../Components/Catalog/CatalogList";
 import { Pagination } from "../Components/Pagination/Pagination";
 export const Catalog: React.FC = () => {
-    window.scrollTo(0, 0);
     const { setItems, loading, activeSort = {
         name: "Цена",
         dir: "по убыванию",
