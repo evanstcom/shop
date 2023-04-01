@@ -1,0 +1,158 @@
+@import '../../scss/variables.module'
+
+.header
+    margin-bottom: 45px
+    &__container
+        border-bottom: 1px solid rgba(63, 78, 101, 0.2)
+    &__top-menu
+        height: 60px
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__contacts
+        display: flex
+        gap: 40px
+    &__contacts-item
+        display: flex
+        align-items: center
+        gap: 15px
+    &__contacts-icon
+        color: $color-primary
+        font-size: 17px
+    &__contacts-title
+        font-weight: 600
+        line-height: 130%
+    &__contacts-subtitle
+        color: $color-primary
+        line-height: 130%
+        font-weight: 300
+    &__main-menu
+        height: 110px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 10px
+    &__search
+        background-color: #EDEDED
+        max-width: 262px
+        input
+            width: 80%
+            background-color: #EDEDED
+    &__callback
+        display: flex
+        align-items: center
+        text-align: right
+    &__phone
+        margin-right: 14px
+    &__contact-title
+        font-weight: 600
+        line-height: 150%
+        margin-bottom: 5px
+    &__contact-text
+        color: $color-primary
+        font-weight: 300
+        font-size: 12px
+        line-height: 150%
+        margin-bottom: 5px
+    &__contact-link
+        color: $color-primary
+        font-size: 10px
+        line-height: 150%
+        text-decoration-line: underline
+    &__cart
+        display: flex
+        align-items: center
+    &__mobile
+        height: 40px
+        border-bottom: 1px solid rgba(63, 78, 101, 0.2)
+        div
+            width: 50%
+            height: 100%
+            border-right: 1px dashed rgba(63, 78, 101, 0.1)
+            display: flex
+            align-items: center
+            justify-content: space-around
+            &:last-child
+                border-right: none
+            h3, a
+                display: flex
+                align-items: center
+                font-weight: 600
+                font-size: 12px
+                line-height: 15px
+                color: $color-primary
+                span
+                    margin-right: 10px
+                    font-size: 16px
+    &__price
+        height: 60px
+        padding: 0 25px
+        border-right: 1px dashed rgba(63, 78, 101, 0.1)
+        border-left: 1px dashed rgba(63, 78, 101, 0.1)
+
+.cart
+    cursor: pointer
+    &__item
+        position: relative
+    &__icon
+        margin-right: 24px
+        font-size: 28px
+        color: $color-primary
+    &__count
+        width: 22px
+        height: 22px
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        position: absolute
+        top: -5px
+        right: 10px
+        background-color: $color-orange
+        color: $color-light
+        font-weight: 700
+        font-size: 12px
+        line-height: 14px
+        border: 2px solid $color-light
+    &__name
+        font-weight: 300
+        font-size: 12px
+        line-height: 150%
+        color: $color-primary
+    &__price
+        font-weight: 600
+        line-height: 150%
+
+/* ADAPTIVE */
+
+/* ADAPTIVE */
+
+@media ( max-width: 1305px )
+    .header
+        &__price
+            display: none
+
+@media ( max-width: 1130px )
+    .header
+        &__logo
+            width: 120px
+        &__top-menu
+            display: none
+        &__btn
+            display: none!important
+        &__search
+            display: none!important
+        &__callback
+            display: none
+    .cart
+        &__info
+            display: none
+
+@media ( max-width: 991px )
+
+@media ( max-width: 835px )
+
+@media ( max-width: 575px )
+    .header
+        &__logo
+            width: 97px

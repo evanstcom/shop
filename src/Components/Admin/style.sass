@@ -1,0 +1,82 @@
+@import '../../scss/variables.module'
+
+.admin
+    &__list
+        margin-bottom: 30px
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+        gap: 30px
+    &__item
+        word-break: break-all
+        padding: 10px
+        background: #ededed69
+        display: flex
+        flex-direction: column
+        gap: 10px
+        border-radius: 10px
+    &__panel
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__icons
+        display: flex
+        gap: 20px
+    &__icon
+        color: $color-primary
+        cursor: pointer
+        font-size: 15px
+        &_edit
+            &:hover
+                color: blue
+        &_delete
+            &:hover
+                color: red
+        &_create
+            color: green
+            font-size: 30px
+    &__image
+        width: 75px
+        height: 75px
+    &__prop
+        input, select, textarea
+            border: 1px solid $color-orange
+            width: 100%
+            padding: 10px
+            resize: none
+            &:focus
+                outline: none
+    &__key
+        color: $color-primary
+        margin-bottom: 10px
+    &__value
+        padding: 10px
+        display: flex
+        align-items: center
+        justify-content: center
+        background: #EDEDED
+        border-radius: 10px
+        margin-bottom: 10px
+    &__input-id
+        background: #EDEDED
+        border-radius: 5px
+        border: 1px solid $color-orange
+        width: 30%
+        padding: 5px
+        &:focus
+            outline: none
+    &__input-image
+        display: flex
+        align-items: center
+        gap: 5px
+        input
+            border: 1px solid $color-orange
+            padding: 10px
+            margin-bottom: 0
+            &:focus
+                outline: none
+    &__create
+        padding: 10px
+        background: #ededed69
+        text-align: center
+        gap: 10px
+        border-radius: 10px

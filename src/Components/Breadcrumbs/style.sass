@@ -1,0 +1,25 @@
+@import '../../scss/variables.module'
+
+.bread
+    margin-bottom: 50px
+    &__list
+        display: flex
+    &__item
+        display: flex
+        align-items: center
+        height: 17px
+        margin-right: 10px
+        border-right: 1px dashed rgba(63, 78, 101, 0.1)
+        padding-right: 10px
+        cursor: pointer
+        &:last-child
+            margin-right: 0
+            padding-right: 0
+            border-right: none
+            opacity: 0.5
+            cursor: default
+    &__link
+        font-weight: 300
+        font-size: 14px
+        line-height: 120%
+        color: $color-primary

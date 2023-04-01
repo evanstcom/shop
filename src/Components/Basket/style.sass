@@ -1,0 +1,204 @@
+.basket
+    margin-bottom: 100px
+    &__list
+        display: flex
+        flex-direction: column
+        gap: 50px
+        margin-bottom: 50px
+    &__item
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-bottom: 50px
+        border-bottom: 1px dashed rgba(63, 78, 101, 0.1)
+    &__image
+        max-width: 280px
+        max-height: 190px
+        margin-right: 20px
+    &__info
+        align-self: flex-start
+        flex-grow: 1
+        padding-top: 10px
+        max-width: 480px
+        margin-right: 85px
+    &__size
+        display: flex
+        align-items: center
+        gap: 3px
+        font-size: 12px
+        color: #3F4E65
+        line-height: 130%
+        margin-bottom: 10px
+    &__name
+        font-weight: 700
+        font-size: 30px
+        line-height: 36px
+        color: #111111
+        margin-bottom: 10px
+    &__desc
+        font-weight: 300
+        font-size: 12px
+        line-height: 150%
+        color: #3F4E65
+    &__price
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 49px
+        font-weight: 700
+        font-size: 30px
+        line-height: 130%
+        color: #111111
+        width: 140px
+        border-right: 1px dashed rgba(63, 78, 101, 0.1)
+        margin-right: 42px
+    &__complete
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__btn
+        &_complete
+            width: 192px
+            padding-top: 21px
+            padding-bottom: 21px
+            border-radius: 79px
+        &_delete
+            height: 59px
+            width: 59px
+            border-radius: 50%
+            &:hover
+                svg
+                    path
+                        fill: #FFC85E
+    &__total
+        font-weight: 700
+        font-size: 30px
+        line-height: 130%
+        color: #111111
+    &__order
+        display: flex
+        align-items: center
+
+.change
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 44px
+    height: 49px
+    border-right: 1px dashed rgba(63, 78, 101, 0.1)
+    border-left: 1px dashed rgba(63, 78, 101, 0.1)
+    div
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 34px
+        height: 23px
+        background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%)
+        border-radius: 100px
+        font-weight: 300
+        font-size: 12px
+        line-height: 15px
+        color: #3F4E65
+        cursor: pointer
+    span
+        padding: 0 17px
+.show
+    position: relative
+.modal
+    background-color: #fff
+    width: 70%
+    max-width: 735px
+    height: 424px
+    padding: 40px 30px
+    border-radius: 10px
+    position: absolute
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1)
+    transition: all 0.5s ease-in-out
+    svg
+        margin-bottom: 24px
+    h2
+        font-weight: 500
+        font-size: 40px
+        line-height: 120%
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 20px
+    h3
+        font-weight: 300
+        font-size: 20px
+        line-height: 120%
+        text-align: center
+        color: #3F4E65
+    &__close
+        cursor: pointer
+        position: absolute
+        right: 10px
+        top: 10px
+
+.overlay
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.4)
+    transition: all 0.5s ease-in-out
+
+@media ( max-width: 1305px )
+
+@media ( max-width: 1130px )
+
+@media ( max-width: 991px )
+    .basket
+        &__info
+            max-width: 100%
+            margin-right: 0
+        &__image
+            margin-right: 0
+        &__item
+            flex-direction: column
+        &__order
+            justify-content: space-between
+            width: 100%
+        &__desc
+            margin-bottom: 10px
+        &__price
+            border-left: 1px dashed rgba(63, 78, 101, 0.1)
+            border-right: 1px dashed rgba(63, 78, 101, 0.1)
+            margin: 0 10px
+            width: 40%
+    .modal
+        h2
+            font-size: 30px
+        h3
+            font-size: 20px
+    .change
+        padding: 0
+        border-left: none
+        border-right: none
+@media ( max-width: 835px )
+    .modal
+        h2
+            font-size: 20px
+        h3
+            font-size: 14px
+
+@media ( max-width: 575px )
+    .basket
+        &__name
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
+        &__price
+            font-size: 16px
+        &__complete
+            flex-direction: column-reverse
+            align-items: center
+            gap: 25px

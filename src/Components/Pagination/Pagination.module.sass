@@ -1,0 +1,47 @@
+.pagination
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 30px
+    gap: 30px
+    :global
+        li
+            a
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 25px
+                height: 25px
+                cursor: pointer
+                border-radius: 50%
+                background: ransparent
+                &:hover
+                    background: #3f4e655b
+                    color: white
+        .previous, .next
+            a
+                width: 25px
+                height: 25px
+                background: #ffc96585!important
+                border-radius: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+                cursor: pointer
+                border: 1px solid transparent
+                transition: all 0.4s
+                color: #3f4e65a9
+                &:hover
+                    border-color: #ffc96585
+                    background: transparent
+        .selected
+            a
+                width: 25px
+                height: 25px
+                background: #3f4e65da
+                border-radius: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+                cursor: pointer
+                color: white
