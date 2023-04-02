@@ -21,6 +21,7 @@ export const BasketItem:React.FC<IOrder> = (props) => {
         useContext(ShopContext);
     return (
         <div className="basket__item">
+            <div className="basket__image-block">
             <img
                 className="basket__image"
                 src={
@@ -30,6 +31,7 @@ export const BasketItem:React.FC<IOrder> = (props) => {
                 }
                 alt=""
             />
+            </div>
             <Link to={`/catalog/${id}`} className="basket__info">
                 <div className="basket__size">
                     {size === "size" ? (
@@ -59,9 +61,9 @@ export const BasketItem:React.FC<IOrder> = (props) => {
                     )}
                 </div>
                 <h3 className="basket__name">
-                    <span>{brand}</span> {name}
+                    <span>{brand}</span> {name.slice(0, 30) + '...'}
                 </h3>
-                <h4 className="basket__desc">{description}</h4>
+                <h4 className="basket__desc">{description.slice(0, 200)  + '...'}</h4>
             </Link>
             <div className="basket__order">
                 <div className="change">

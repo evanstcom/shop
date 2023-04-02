@@ -8,14 +8,16 @@
     &__item
         display: flex
         align-items: center
-        justify-content: space-between
         padding-bottom: 50px
         border-bottom: 1px dashed rgba(63, 78, 101, 0.1)
-    &__image
-        max-width: 280px
-        max-height: 190px
+    &__image-block
+        min-width: 280px
+        text-align: center
         margin-right: 20px
+    &__image
+        height: 280px
     &__info
+        display: block
         align-self: flex-start
         flex-grow: 1
         padding-top: 10px
@@ -154,9 +156,11 @@
 @media ( max-width: 1305px )
 
 @media ( max-width: 1130px )
-
-@media ( max-width: 991px )
     .basket
+        &__name
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
         &__info
             max-width: 100%
             margin-right: 0
@@ -183,6 +187,8 @@
         padding: 0
         border-left: none
         border-right: none
+@media ( max-width: 991px )
+
 @media ( max-width: 835px )
     .modal
         h2

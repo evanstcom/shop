@@ -35,6 +35,7 @@ export const Catalog: React.FC = () => {
     }, [activeSort, activeType, page]);
 
     return (
+        <div className="main-section">
         <div className="container main-section__container">
             <BreadCrumbs name={''} />
             <div className="main-section__top">
@@ -53,6 +54,7 @@ export const Catalog: React.FC = () => {
                 </>
             )}
             <Pagination onChangePage={(num: number) => setPage(num)} />
+        </div>
         </div>
     );
 };

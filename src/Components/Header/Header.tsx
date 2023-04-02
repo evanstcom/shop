@@ -12,7 +12,7 @@ import "./style.sass";
 
 export const Header = () => {
     return (
-        <div className="header">
+        <header className="header">
             <div className="header__container">
                 <div className="header__top-menu container">
                     <div className="header__contacts">
@@ -133,6 +133,6 @@ export const Header = () => {
                     </h3>
                 </div>
             </div>
-        </div>
+        </header>
     );
 };

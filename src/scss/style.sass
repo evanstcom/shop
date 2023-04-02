@@ -97,7 +97,8 @@ a
             background: transparent
             border-color: $color-orange
             color: $color-orange
-
+            span
+                color: $color-orange
 .nav
     &__list
         display: flex
@@ -131,6 +132,7 @@ a
         font-size: 30px
 
 .main-section
+    margin-top: 200px
     min-height: calc( 100vh - 170px - 500px )
     &__container
         margin-bottom: 50px
@@ -423,6 +425,8 @@ a
 @media ( max-width: 1000px )
     .item-page
         flex-direction: column
+        &__name
+            font-size: 16px
         &__image-block
             align-self: center
             width: 100%
