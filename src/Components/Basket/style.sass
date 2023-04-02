@@ -113,7 +113,8 @@
     height: 424px
     padding: 40px 30px
     border-radius: 10px
-    position: absolute
+    position: fixed
+    z-index: 10
     display: flex
     flex-direction: column
     align-items: center
@@ -145,7 +146,9 @@
         top: 10px
 
 .overlay
-    position: absolute
+    position: fixed
+    overflow: hidden
+    z-index: 9
     left: 0
     top: 0
     width: 100%

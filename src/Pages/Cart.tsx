@@ -1,13 +1,13 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import { ShopContext } from '../context';
 import { BasketList } from "../Components/Basket/BasketList";
 import { BreadCrumbs } from "../Components/Breadcrumbs/BreadCrumbs";
-
+window.scrollTo(0, 0);
 export const Cart = () => {
-  const { order = [] } = useContext(ShopContext);
+    const { order = [] } = useContext(ShopContext);
     return (
         <section className="main-section container">
-            <BreadCrumbs name={''}/>
+            <BreadCrumbs name={''} />
             <h1
                 className="main-section__title"
                 style={{
@@ -19,9 +19,9 @@ export const Cart = () => {
                 Корзина
             </h1>
             {
-              order.length ? <BasketList /> : <h2 style={{marginBottom: '50px'}}>Корзина пуста</h2>
+                order.length ? <BasketList /> : <h2 style={{ marginBottom: '50px' }}>Корзина пуста</h2>
             }
-            
+
         </section>
     );
 };
